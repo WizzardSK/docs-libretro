@@ -2,7 +2,7 @@
 
 ## Background
 
-A port of the [RPCS3](https://github.com/RPCS3/rpcs3) PlayStation 3 emulator to libretro. It renders through the frontend's hardware context - Vulkan or OpenGL - and runs the PS3's Cell processor with RPCS3's LLVM recompilers.
+A port of the [RPCS3](https://github.com/RPCS3/rpcs3) PlayStation 3 emulator to libretro. It runs the PS3's Cell processor with RPCS3's LLVM recompilers and renders with Vulkan or OpenGL.
 
 The core is built for Linux x86_64 and arm64, Windows x64 and Android arm64-v8a.
 
@@ -19,7 +19,10 @@ A summary of the licenses behind RetroArch and its cores can be found [here](../
 
 ## Requirements
 
-A 64-bit CPU and a GPU with Vulkan or OpenGL 4.3 support. The core cannot run without a hardware context: if the frontend cannot provide one, loading content fails.
+A 64-bit CPU and a GPU with Vulkan or OpenGL 4.5 support. The two renderers (the **Renderer** core option) reach the screen differently:
+
+* **Vulkan** (the default) renders on its own device and hands each finished frame to the frontend through memory, so it works with any RetroArch video driver.
+* **OpenGL** draws straight into the frontend's context, so it needs RetroArch's `glcore` video driver and an OpenGL 4.5 capable GPU.
 
 PS3 emulation is very demanding on the CPU; the requirements of [standalone RPCS3](https://rpcs3.net/quickstart) apply.
 
