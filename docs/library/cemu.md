@@ -123,6 +123,7 @@ The Cemu core has the following option(s) that can be tweaked from the core opti
 #### Video
 
 - **Upscale Filter** [cemu_upscale_filter] (**Linear**|Bicubic|Bicubic Hermite|Nearest)
+- **Show Game FPS** [cemu_show_game_fps] (**OFF**|ON)
 - **Downscale Filter** [cemu_downscale_filter] (**Linear**|Bicubic|Bicubic Hermite|Nearest)
 - **Internal Resolution** [cemu_internal_resolution] (640x360|960x540|**1280x720**|1920x1080|2560x1440|3840x2160)
 - **Fullscreen Scaling** [cemu_fullscreen_scaling] (**Keep Aspect**|Stretch)
@@ -147,10 +148,6 @@ The Cemu core has the following option(s) that can be tweaked from the core opti
 - **Layout 5** [cemu_screen_layout5] (Default Screen|GamePad Screen|Side by Side|Top Bottom|**Picture in Picture**)
 - **Next Screen Layout** [cemu_next_screen_layout_button] (OFF|**L + R + L2 + R2 + L3 + R3**|Select + L3|Select + R3|Tab)
 - **GamePad Position** [cemu_drc_position] (**Normal**|Swapped)
-
-#### Audio
-
-- **Audio Latency** [cemu_audio_latency] (1|**2**|3|4)
 
 #### System
 

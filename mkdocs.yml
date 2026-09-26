@@ -286,6 +286,7 @@ nav:
         - 'Sony - PlayStation (PCSX ReARMed)': 'library/pcsx_rearmed.md'
         - 'Sony - PlayStation 2 (PCSX2)': 'library/lrps2.md'
         - 'Sony - PlayStation 2 (PCEE2)': 'library/pcee2.md'
+        - 'Sony - PlayStation 3 (RPCS3)': 'library/rpcs3.md'
         - 'Sony - PlayStation 2 (Play!)': 'library/play.md'
         - 'Sony - PlayStation Portable (PPSSPP)': 'library/ppsspp.md'
       - 'SpectraVision Emulation':
